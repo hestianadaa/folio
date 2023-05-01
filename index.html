@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Hesti | {{$title}} </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+    <section class="greeting">
+    <h1>Welcome!</h1>
+    <p>Hello there, welcome to my <b>personal website</b>! Click the button below to get to know
+    further about me :)</p>
+    <a href="about.html" class="btn">Click Here</a>
+    </section>
+
+ <script>     
+    let h1 = document.querySelector("h1");
+    let date = new Date();
+    let timeNow = date.getHours();
+
+    if (timeNow >= 5 && timeNow < 12) {
+       h1.textContent = "Good Morning!";}
+    else if (timeNow >= 12 && timeNow < 15) {
+       h1.textContent = "Good Afternoon!";}
+    else if (timeNow >= 15 && timeNow < 18) {
+       h1.textContent = "Good Evening!";}
+    else {
+       h1.textContent = "Good Night!";}
+    </script>
+  </body>
+</html>
